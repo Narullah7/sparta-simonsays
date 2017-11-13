@@ -1,10 +1,58 @@
 $(document).ready(function(){
   console.log("ready");
 
+  var randomColors = [];
+  var myColors = ["red","blue","yellow","green"];
 
+// $("#start").on("click",function(){
+//
+//   function randomNumber(){
+//     return Math.floor(Math.random() * myColors.length)
+//   }
+//
+//   for (i=0; 1<4; i++){
+//     randomColors.push(myColors[randomNumber()]);
+//   }
+//   console.log("This array is"+randomColors);
+// })
+
+// function that loops through array and prints out the color
+function colorPicker(){
+  var counter = 0;
+  var myInterval = setInterval(function(){
+    randomNumber();
+    // debugger;
+    counter += 1;
+
+    for (i=0; 1<4; i++){
+      randomColors = myColors[i];
+      console.log(randomColors);
+    }
+
+
+    if (counter === 4) {
+      clearInterval(myInterval);
+    }
+
+  }, 1500);
+}
+colorPicker();
+
+function randomNumber(){
+
+    var number = Math.floor(Math.random() * 4);
+    // return number;
+
+    console.log(number);
+
+}
+// randomNumber();
+
+// add a reset button
 $("#reset").click(function(){
   location.reload();
 })
+
 
 
 
