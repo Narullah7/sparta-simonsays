@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simon says</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container" align="center">
+
+      <h1><u>Instructions</u></h1>
+      <h2></h2>
+      <h3>This is the place which decides the winner, loser and keeps track of the game</h3>
+      <br><br>
+      <div>
+        <button id="score">This is where the score goes</button>
+        <button id="lives">This is where the lives go</button>
+      </div>
+      <br><br>
+      <table class="board">
+        <tr>
+          <td><button id="button1" class="red" type="button">red</button></td>
+          <td><button id="1" class="blue" type="button">Blue</button></td>
+          <td><button id="2" class="yellow" type="button">yellow</button></td>
+          <td><button id="3" class="green" type="button">green</button></td>
+        </tr>
+      </table>
+      <br><br>
+      <div>
+        <button id="start">Start game</button>
+        <button id="reset">Reset game</button>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
