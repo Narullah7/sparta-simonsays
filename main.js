@@ -20,13 +20,13 @@ $(document).ready(function(){
 function colorPicker(){
   var counter = 0;
   var myInterval = setInterval(function(){
-    randomNumber();
     // debugger;
     counter += 1;
 
     for (i=0; 1<4; i++){
-      randomColors = myColors[i];
-      console.log(randomColors);
+      randomNumber();
+
+      console.log(randomNumber());
     }
 
 
